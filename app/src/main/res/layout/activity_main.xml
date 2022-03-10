@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/fruitcheckBox"
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="158dp"
+        android:text="Fruits"
+        android:onClick="onCheckBoxClick"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/veggieCheckBox"
+        android:layout_width="178dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="158dp"
+        android:onClick="onCheckBoxClick"
+        android:text="Veggies"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fruitcheckBox" />
+
+    <CheckBox
+        android:id="@+id/cassCheckBox"
+        android:layout_width="178dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="168dp"
+        android:text="cassava"
+        android:onClick="onCheckBoxClick"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/veggieCheckBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
